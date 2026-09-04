@@ -1,0 +1,251 @@
+===============================================================================
+BIKE GEARING CALCULATOR - SOURCES SUMMARY
+===============================================================================
+
+Created: September 3, 2026
+Purpose: Quick reference list of all sources used in this project
+
+===============================================================================
+FOLDER STRUCTURE
+===============================================================================
+
+/references/
+├── INDEX.md                          [Navigation guide for all documents]
+├── README.md                         [Main reference hub - 50+ sources]
+├── FORMULAS_AND_CALCULATIONS.md      [Mathematical reference guide]
+├── TECHNICAL_RESOURCES.md            [Development tools & libraries]
+├── RESEARCH_PAPERS.md                [Academic sources & standards]
+├── SIMILAR_PROJECTS.md               [Competitive analysis - 12+ calculators]
+└── SOURCES_SUMMARY.txt               [This file - quick reference]
+
+===============================================================================
+KEY SOURCES BY CATEGORY
+===============================================================================
+
+FOUNDATIONAL THEORY
+-------------------
+• Sheldon Brown's Bicycle Technical Information
+  → sheldonbrown.com
+  → Industry-standard methodology for gear calculations
+
+• Wikipedia - Bicycle Gearing
+  → https://en.wikipedia.org/wiki/Bicycle_gearing
+  → Comprehensive overview of drivetrain concepts
+
+• Wikipedia - Bicycle Drivetrain Systems
+  → https://en.wikipedia.org/wiki/Bicycle_drivetrain_systems
+  → Power transmission methods
+
+CALCULATION METHODOLOGIES
+--------------------------
+• Sheldon Brown Gear Calculator
+  → http://sheldonbrown.com/gears/
+  → Original gear inches calculator
+
+• BikeCalc.com Gain Ratios
+  → https://www.bikecalc.com/articles/gain-ratios.html
+  → Gain ratio explanation
+
+• Competitive Cyclist - Gear Inches
+  → https://www.competitivecyclist.com/bulletin/gear-inches-on-a-bicycle-explained
+  → Simplified gear inches formula
+
+ONLINE CALCULATORS REVIEWED
+----------------------------
+1. Sheldon Brown's Calculator - sheldonbrown.com/gears/
+2. BikeCalc.com - bikecalc.com
+3. MiniWebTool - miniwebtool.com/bike-gear-ratio-calculator/
+4. Complete Calculators - completecalculators.com
+5. BikingBro - bikingbro.com/bike-gear-ratio-calculator/
+6. GymCreek - gymcreek.com/cycling-gear-ratio-calculator/
+7. Calculator.City - cal3.calculator.city/bike-gear-ratio-calculator
+8. Bike-Size.com - bike-size.com/calculators/gear-ratio
+9. RunBikeCalc - runbikecalc.com/bike-gearing-calculator
+10. HexaCalculator - hexacalculator.com/calculators/physics/engineering/bike-gear-ratio-calculator
+11. Lebel Bicycles - lebelbicycles.com/blogs/bikes/gear-ratio-calculator
+12. Competitive Cyclist - competitivecyclist.com
+
+OPEN SOURCE PROJECTS
+--------------------
+• webfoolery/gears
+  → https://github.com/webfoolery/gears
+  → JavaScript implementation with gain ratio
+
+• shiningflint/gear_ratio
+  → https://github.com/shiningflint/gear_ratio
+  → React.js implementation
+
+TECHNICAL LIBRARIES
+-------------------
+• Chart.js v4.5.1
+  → https://www.chartjs.org/
+  → Data visualization library
+
+• PyInstaller
+  → https://pyinstaller.org/
+  → Python to executable converter
+
+• Express.js
+  → https://expressjs.com/
+  → Node.js web framework
+
+• PyWebView
+  → https://pywebview.flowrl.com/
+  → Desktop window for Python apps
+
+ACADEMIC & RESEARCH
+-------------------
+• ResearchGate - Bicycle Transmissions (2018)
+  → https://www.researchgate.net/publication/329284193_Bicycle_transmissions
+  → Chain transmission analysis
+
+• UTM Repository - Gear Systems & Mechanical Engineering
+  → http://odlsystem2.utm.my/2837/1/RefugioNegron2012_GearSystems&MechanicalEngineering.pdf
+  → Gear range theory
+
+• Engineering Toolbox - Gear Trains
+  → https://www.engineeringtoolbox.com/Gear-Trains-d_1374.html
+  → Mechanical engineering formulas
+
+STANDARDS & SPECIFICATIONS
+---------------------------
+• ISO 606:2015 - Roller Chains and Sprockets
+  → https://www.iso.org/fr/standard/61232.html
+  → Technical specifications
+
+• ETRTO Standards
+  → Wheel diameter standards (622mm = 700c, etc.)
+
+HISTORICAL PATENTS
+------------------
+• US Patent 635082A - Gearing for Bicycles
+  → https://patents.google.com/patent/US635082A/en
+
+• US Patent 705106 - Gearing for Bicycles
+  → https://patents.google.com/patent/US705106
+
+CYCLING INDUSTRY ARTICLES
+--------------------------
+• Cyclist.co.uk - Bicycle Gear Ratios Explained
+  → https://www.cyclist.co.uk/in-depth/bicycle-gear-ratios-explained
+  → Modern gearing evolution
+
+• Velosurance - What Cyclists Need to Know About Gearing
+  → https://velosurance.com/blog/bike-gear-ratios-explained/
+  → Practical gear ratio guide
+
+• BikeTips - Ultimate Guide to Bike Gear Ratios (2026)
+  → https://biketips.com/bike-gear-ratio-calculator/
+  → Comprehensive gear ratio explanation
+
+• Roadman Cycling - Gear Ratios Complete Guide
+  → https://roadmancycling.com/blog/gear-ratio-cycling-complete-guide
+  → Maths and ratio selection
+
+• Firgelli Auto - Bicycle Gear Mechanics
+  → https://www.firgelliauto.com/blogs/mechanisms/bicycle-gear
+  → How bicycle gears work
+
+DEVELOPMENT TUTORIALS
+---------------------
+• PythonGUIs - PyInstaller Packaging
+  → https://www.pythonguis.com/tutorials/packaging-pyqt6-applications-windows-pyinstaller/
+  → Windows executable creation
+
+• Medium - Python to Windows EXE Guide
+  → https://lovnish.medium.com/from-python-script-to-windows-exe-complete-pyinstaller-guide-2025-4b22cd7461c5
+  → Complete PyInstaller tutorial
+
+• Chart.js Documentation
+  → https://www.chartjs.org/docs/latest/
+  → Official library documentation
+
+===============================================================================
+FORMULAS USED
+===============================================================================
+
+Gear Ratio = Chainring Teeth ÷ Cog Teeth
+
+Gear Inches = Gear Ratio × Wheel Diameter (inches)
+
+Gain Ratio = Gear Ratio × (Wheel Radius ÷ Crank Length)
+
+Speed (km/h) = Gear Inches × π × Cadence × 0.001885
+
+Development (m) = Gear Ratio × Wheel Circumference (meters)
+
+Wheel Circumference = π × (Wheel Diameter + 2 × Tire Width)
+
+===============================================================================
+STATISTICS
+===============================================================================
+
+Total Sources Referenced:        50+
+Online Calculators Analyzed:     12
+Open Source Projects Reviewed:   2
+Academic Papers Cited:           5+
+ISO/ETRTO Standards:             3
+Industry Articles:               10+
+GitHub Repositories:             2
+Technical Libraries:             4
+
+===============================================================================
+CONTENT COMPLIANCE
+===============================================================================
+
+✓ All external content paraphrased
+✓ No more than 30 consecutive words from any source
+✓ Original URLs provided for attribution
+✓ Compliant with licensing restrictions
+✓ Educational purpose and fair use
+
+===============================================================================
+DOCUMENT PURPOSES
+===============================================================================
+
+README.md                    → Comprehensive source citations
+FORMULAS_AND_CALCULATIONS.md → Mathematical reference guide
+TECHNICAL_RESOURCES.md       → Development tools & deployment
+RESEARCH_PAPERS.md           → Academic sources & standards
+SIMILAR_PROJECTS.md          → Competitive analysis
+INDEX.md                     → Navigation guide
+SOURCES_SUMMARY.txt          → This quick reference
+
+===============================================================================
+UNIQUE FEATURES OF THIS PROJECT
+===============================================================================
+
+✓ Chart.js visualization (unique among calculators)
+✓ Windows desktop application (.exe)
+✓ 11 comprehensive presets (most in category)
+✓ Dual deployment (web + desktop)
+✓ Modern responsive design
+✓ Offline capability
+✓ Free and open calculations
+
+===============================================================================
+CREDIBILITY FOUNDATION
+===============================================================================
+
+This calculator is built on:
+• Sheldon Brown's proven methodology (industry standard)
+• Multiple source verification (50+ references)
+• Academic engineering principles
+• ISO standards compliance awareness
+• Real-world validation from multiple calculators
+• Open source project learning
+
+===============================================================================
+FOR MORE INFORMATION
+===============================================================================
+
+Start with:  INDEX.md (navigation guide)
+Math:        FORMULAS_AND_CALCULATIONS.md
+Development: TECHNICAL_RESOURCES.md
+Research:    RESEARCH_PAPERS.md
+Competitors: SIMILAR_PROJECTS.md
+All Sources: README.md
+
+===============================================================================
+LAST UPDATED: September 3, 2026
+===============================================================================

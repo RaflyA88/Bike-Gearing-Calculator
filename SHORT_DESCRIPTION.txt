@@ -1,0 +1,71 @@
+BIKE GEARING CALCULATOR - SHORT DESCRIPTION
+
+==============================================
+
+WHAT IT IS:
+A free tool that calculates bicycle gear ratios, speeds, and cadence to help cyclists choose optimal gearing for their riding style.
+
+WHO IT'S FOR:
+Road cyclists, gravel riders, mountain bikers, fixie riders, city commuters, bike mechanics, and anyone buying or building a bike.
+
+WHAT IT DOES:
+• Calculates gear ratios for any chainring/cassette combination
+• Shows speed at different cadences for each gear
+• Displays gear inches and gain ratios
+• Visualizes gear progression with interactive charts
+• Includes 11 ready-made presets (Road, Gravel, MTB, Fixie, City)
+• Helps find the required cadence for target speeds
+
+HOW TO USE:
+1. Enter your bike's chainrings and cassette (or choose a preset)
+2. Set wheel size and tire width
+3. Click "Calculate Gearing"
+4. View complete gear analysis with charts and speeds
+
+AVAILABLE AS:
+• Windows Desktop App - Standalone .exe, works offline, no browser needed
+• Web Application - Works in any browser on any device
+
+WHY USE IT:
+✓ Compare different gearing options before buying
+✓ Understand if your bike has enough low gears for climbing
+✓ Choose the right fixie ratio for your riding
+✓ Optimize gearing for your terrain
+✓ Help customers make informed decisions (bike shops)
+✓ Plan gear selection for specific rides
+
+KEY FEATURES:
+• Instant calculations - no manual math needed
+• Visual charts - see your entire gear range at a glance
+• 11 presets - quick setup for common bike types
+• Custom input - supports any bike configuration
+• Speed calculator - find optimal gear for target speeds
+• 100% free - no ads, no tracking, no subscription
+
+EXAMPLE USE CASES:
+→ "Will this bike climb steep hills?" (Check lowest gear inches)
+→ "Which fixie ratio is best for my city?" (Compare 46×16, 48×17, 44×18)
+→ "Should I get compact or standard gearing?" (Compare both setups)
+→ "What speed will I do at 90 RPM in top gear?" (See speed calculations)
+
+TECHNICAL INFO:
+Uses standard cycling formulas for:
+• Gear Ratio = Chainring ÷ Cog
+• Gear Inches = (Chainring ÷ Cog) × Wheel Diameter
+• Speed = Gear Inches × π × Cadence × 0.001885
+
+SUPPORTED BIKES:
+Road (Compact, Standard), Gravel (1x, 2x), Mountain, Fixie/Track, City, Custom
+
+SYSTEM REQUIREMENTS:
+Windows 7+ (desktop app) or Any web browser (web version)
+No internet needed after download (desktop app)
+
+IN ONE SENTENCE:
+A free bicycle gearing calculator that instantly shows gear ratios, speeds, and optimal gear selection for any bike setup.
+
+==============================================
+
+PERFECT FOR: Making smart decisions about bicycle gearing before you buy, build, or ride.
+
+DOWNLOAD: Free forever • No installation • Works offline

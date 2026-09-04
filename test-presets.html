@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Bike Gearing Presets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .preset-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+        .fixie-info {
+            border-left-color: #e74c3c;
+            background: #ffeaea;
+        }
+        .city-info {
+            border-left-color: #27ae60;
+            background: #e8f5e8;
+        }
+        .preset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .preset-card {
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+        .fixie-card {
+            border-color: #e74c3c;
+            background: #fff5f5;
+        }
+        .city-card {
+            border-color: #27ae60;
+            background: #f5fff5;
+        }
+        .preset-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .preset-details {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .gear-ratio {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚴 Test: Bike Gearing Presets</h1>
+        
+        <div class="preset-info">
+            <h3>✅ New Presets Added Successfully!</h3>
+            <p>The following fixie and city bike presets have been added to the calculator:</p>
+        </div>
+        
+        <div class="preset-grid">
+            <!-- Fixie Presets -->
+            <div class="preset-card fixie-card">
+                <div class="preset-name">Fixie Standard</div>
+                <div class="preset-details">
+                    <strong>Gearing:</strong> 46×16<br>
+                    <strong>Wheel:</strong> 700c (622mm)<br>
+                    <strong>Tire:</strong> 28mm<br>
+                    <div class="gear-ratio">Gear Ratio: 2.88:1</div>
+                </div>
+            </div>
+            
+            <div class="preset-card fixie-card">
+                <div class="preset-name">Fixie Fast</div>
+                <div class="preset-details">
+                    <strong>Gearing:</strong> 48×17<br>
+                    <strong>Wheel:</strong> 700c (622mm)<br>
+                    <strong>Tire:</strong> 28mm<br>
+                    <div class="gear-ratio">Gear Ratio: 2.82:1</div>
+                </div>
+            </div>
+            
+            <div class="preset-card fixie-card">
+                <div class="preset-name">Fixie Easy</div>
+                <div class="preset-details">
+                    <strong>Gearing:</strong> 44×18<br>
+                    <strong>Wheel:</strong> 700c (622mm)<br>
+                    <strong>Tire:</strong> 28mm<br>
+                    <div class="gear-ratio">Gear Ratio: 2.44:1</div>
+                </div>
+            </div>
+            
+            <!-- City Bike Presets -->
+            <div class="preset-card city-card">
+                <div class="preset-name">City Bike 26"</div>
+                <div class="preset-details">
+                    <strong>Gearing:</strong> 44×16<br>
+                    <strong>Wheel:</strong> 26" (559mm)<br>
+                    <strong>Tire:</strong> 35mm<br>
+                    <div class="gear-ratio">Gear Ratio: 2.75:1</div>
+                </div>
+            </div>
+            
+            <div class="preset-card city-card">
+                <div class="preset-name">City Bike 700c</div>
+                <div class="preset-details">
+                    <strong>Gearing:</strong> 46×18<br>
+                    <strong>Wheel:</strong> 700c (622mm)<br>
+                    <strong>Tire:</strong> 35mm<br>
+                    <div class="gear-ratio">Gear Ratio: 2.56:1</div>
+                </div>
+            </div>
+            
+            <div class="preset-card city-card">
+                <div class="preset-name">City Bike Comfort</div>
+                <div class="preset-details">
+                    <strong>Gearing:</strong> 38×18<br>
+                    <strong>Wheel:</strong> 26" (559mm)<br>
+                    <strong>Tire:</strong> 40mm<br>
+                    <div class="gear-ratio">Gear Ratio: 2.11:1</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fixie-info">
+            <h4>🚴 Fixie Gearing Notes:</h4>
+            <ul>
+                <li><strong>46×16 (Standard):</strong> Balanced ratio for mixed terrain</li>
+                <li><strong>48×17 (Fast):</strong> Higher top speed, harder to accelerate</li>
+                <li><strong>44×18 (Easy):</strong> Easier for hills and stop-and-go traffic</li>
+                <li>Fixies use single-speed gearing (one chainring, one cog)</li>
+                <li>Gear inches typically range from 70-80 for comfortable riding</li>
+            </ul>
+        </div>
+        
+        <div class="city-info">
+            <h4>🏙️ City Bike Gearing Notes:</h4>
+            <ul>
+                <li><strong>44×16 (26" wheels):</strong> Good for hilly cities</li>
+                <li><strong>46×18 (700c wheels):</strong> Balanced for flat to rolling terrain</li>
+                <li><strong>38×18 (Comfort):</strong> Easy pedaling for casual riding</li>
+                <li>City bikes prioritize comfort over speed</li>
+                <li>Wider tires (35-40mm) for better comfort and stability</li>
+            </ul>
+        </div>
+        
+        <div class="preset-info">
+            <h4>🔗 How to Test:</h4>
+            <ol>
+                <li>Open the calculator at <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></li>
+                <li>Scroll down to the "Common Presets" section</li>
+                <li>Click on any fixie or city bike preset</li>
+                <li>The calculator will automatically update with the preset values</li>
+                <li>Click "Calculate Gearing" to see the results</li>
+            </ol>
+            <p><strong>Note:</strong> Fixie and city bike presets have special colored borders (red for fixie, green for city bike) for easy identification.</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="http://localhost:3000" style="background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
+                Open Calculator Now
+            </a>
+        </div>
+    </div>
+</body>
+</html>

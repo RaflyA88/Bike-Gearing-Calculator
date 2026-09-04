@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Gearing Calculator - Social Media Poster</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Instagram Square Post (1080x1080) */
+        .instagram-post {
+            width: 1080px;
+            height: 1080px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .instagram-post::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 80px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Header */
+        .post-header {
+            text-align: center;
+        }
+
+        .main-icon {
+            font-size: 180px;
+            color: white;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .main-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 110px;
+            color: white;
+            text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            letter-spacing: 5px;
+            line-height: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .main-subtitle {
+            font-size: 42px;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 300;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Features Grid */
+        .quick-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .quick-feature {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .quick-feature i {
+            font-size: 60px;
+            color: #ffd700;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.3));
+        }
+
+        .quick-feature-text {
+            font-size: 32px;
+            color: white;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Big CTA */
+        .big-cta {
+            background: white;
+            border-radius: 25px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-text {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 70px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+
+        .cta-subtext {
+            font-size: 32px;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        /* Facebook/Twitter Post (1200x630) */
+        .facebook-post {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+        }
+
+        .fb-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 60px 80px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .fb-left {
+            flex: 1;
+        }
+
+        .fb-icon {
+            font-size: 140px;
+            color: white;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.4));
+        }
+
+        .fb-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 90px;
+            color: white;
+            text-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            line-height: 0.9;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .fb-tagline {
+            font-size: 32px;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .fb-badges {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 215, 0, 0.9);
+            color: #764ba2;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .fb-right {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            min-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .fb-right h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 50px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .fb-feature-list {
+            list-style: none;
+        }
+
+        .fb-feature-list li {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+            font-weight: 600;
+        }
+
+        .fb-feature-list li i {
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-size: 28px;
+        }
+
+        /* Print/Save buttons */
+        .control-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .control-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .control-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            .control-panel {
+                display: none;
+            }
+            body {
+                padding: 0;
+            }
+        }
+
+        /* Story Post (1080x1920) */
+        .story-post {
+            width: 1080px;
+            height: 1920px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .story-content {
+            position: relative;
+            z-index: 1;
+            padding: 100px 80px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .story-header {
+            text-align: center;
+        }
+
+        .story-icon {
+            font-size: 250px;
+            color: white;
+            margin-bottom: 50px;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
+        }
+
+        .story-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 140px;
+            color: white;
+            text-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            letter-spacing: 6px;
+            line-height: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .story-subtitle {
+            font-size: 52px;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 300;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 80px;
+        }
+
+        .story-features {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            padding: 60px;
+        }
+
+        .story-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .story-feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .story-feature-item i {
+            font-size: 70px;
+            color: #ffd700;
+            min-width: 70px;
+        }
+
+        .story-feature-item span {
+            font-size: 42px;
+            color: white;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .story-cta {
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            margin-top: 80px;
+        }
+
+        .story-cta-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 90px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+        }
+
+        .story-cta-text {
+            font-size: 40px;
+            color: #667eea;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="control-panel">
+        <button class="control-btn" onclick="printElement('.instagram-post')">
+            <i class="fab fa-instagram"></i> Save Instagram
+        </button>
+        <button class="control-btn" onclick="printElement('.facebook-post')">
+            <i class="fab fa-facebook"></i> Save Facebook
+        </button>
+        <button class="control-btn" onclick="printElement('.story-post')">
+            <i class="fas fa-mobile-alt"></i> Save Story
+        </button>
+        <button class="control-btn" onclick="window.print()">
+            <i class="fas fa-print"></i> Print All
+        </button>
+    </div>
+
+    <!-- Instagram Square Post -->
+    <div class="instagram-post">
+        <div class="content">
+            <div class="post-header">
+                <div class="main-icon">
+                    <i class="fas fa-bicycle"></i>
+                </div>
+                <h1 class="main-title">BIKE<br>GEARING<br>CALCULATOR</h1>
+                <p class="main-subtitle">Find Your Perfect Gear!</p>
+            </div>
+
+            <div class="quick-features">
+                <div class="quick-feature">
+                    <i class="fas fa-calculator"></i>
+                    <div class="quick-feature-text">Instant<br>Calculations</div>
+                </div>
+                <div class="quick-feature">
+                    <i class="fas fa-chart-bar"></i>
+                    <div class="quick-feature-text">Visual<br>Charts</div>
+                </div>
+                <div class="quick-feature">
+                    <i class="fas fa-sliders-h"></i>
+                    <div class="quick-feature-text">11<br>Presets</div>
+                </div>
+                <div class="quick-feature">
+                    <i class="fas fa-gift"></i>
+                    <div class="quick-feature-text">100%<br>FREE</div>
+                </div>
+            </div>
+
+            <div class="big-cta">
+                <div class="cta-text">DOWNLOAD NOW!</div>
+                <div class="cta-subtext">Windows • Web • Mobile Ready</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facebook/Twitter Post -->
+    <div class="facebook-post">
+        <div class="fb-content">
+            <div class="fb-left">
+                <div class="fb-icon">
+                    <i class="fas fa-bicycle"></i>
+                </div>
+                <h1 class="fb-title">BIKE GEARING<br>CALCULATOR</h1>
+                <p class="fb-tagline">The Ultimate Tool for Cyclists</p>
+                <div class="fb-badges">
+                    <span class="badge">FREE</span>
+                    <span class="badge">OFFLINE</span>
+                    <span class="badge">WINDOWS APP</span>
+                </div>
+            </div>
+
+            <div class="fb-right">
+                <h3>FEATURES</h3>
+                <ul class="fb-feature-list">
+                    <li><i class="fas fa-check-circle"></i> Gear Ratios</li>
+                    <li><i class="fas fa-check-circle"></i> Speed Calculator</li>
+                    <li><i class="fas fa-check-circle"></i> 11 Presets</li>
+                    <li><i class="fas fa-check-circle"></i> Visual Charts</li>
+                    <li><i class="fas fa-check-circle"></i> Road • Gravel • MTB</li>
+                    <li><i class="fas fa-check-circle"></i> Fixie • City Bikes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram/Facebook Story -->
+    <div class="story-post">
+        <div class="story-content">
+            <div class="story-header">
+                <div class="story-icon">
+                    <i class="fas fa-bicycle"></i>
+                </div>
+                <h1 class="story-title">BIKE<br>GEARING<br>CALCULATOR</h1>
+                <p class="story-subtitle">Your Perfect Gear Awaits!</p>
+            </div>
+
+            <div class="story-features">
+                <div class="story-feature-item">
+                    <i class="fas fa-calculator"></i>
+                    <span>Instant Calculations</span>
+                </div>
+                <div class="story-feature-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Interactive Charts</span>
+                </div>
+                <div class="story-feature-item">
+                    <i class="fas fa-sliders-h"></i>
+                    <span>11 Bike Presets</span>
+                </div>
+                <div class="story-feature-item">
+                    <i class="fas fa-desktop"></i>
+                    <span>Desktop App</span>
+                </div>
+                <div class="story-feature-item">
+                    <i class="fas fa-wifi"></i>
+                    <span>Works Offline</span>
+                </div>
+            </div>
+
+            <div class="story-cta">
+                <div class="story-cta-title">GET IT NOW!</div>
+                <div class="story-cta-text">FREE FOREVER</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function printElement(selector) {
+            const element = document.querySelector(selector);
+            const originalContents = document.body.innerHTML;
+            
+            document.body.innerHTML = element.outerHTML;
+            window.print();
+            document.body.innerHTML = originalContents;
+            
+            // Reload to restore functionality
+            location.reload();
+        }
+    </script>
+</body>
+</html>

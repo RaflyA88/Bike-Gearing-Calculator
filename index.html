@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Gearing Calculator - Standalone</title>
+    <style>
+        /* Simple inline styles for standalone version */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .note {
+            background: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+        .files-list {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .files-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .files-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .files-list li:last-child {
+            border-bottom: none;
+        }
+        .instructions {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #27ae60;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚴 Bike Gearing Calculator</h1>
+        
+        <div class="note">
+            <h3>📋 Project Created Successfully!</h3>
+            <p>Your bike gearing calculator web application has been created with the following files:</p>
+        </div>
+        
+        <div class="files-list">
+            <h4>📁 Project Structure:</h4>
+            <ul>
+                <li><strong>public/index.html</strong> - Main HTML file with calculator interface</li>
+                <li><strong>public/styles.css</strong> - CSS styles for the calculator</li>
+                <li><strong>public/script.js</strong> - JavaScript with all calculator logic</li>
+                <li><strong>server.js</strong> - Node.js server (optional)</li>
+                <li><strong>package.json</strong> - Node.js package configuration</li>
+                <li><strong>README.md</strong> - Project documentation</li>
+            </ul>
+        </div>
+        
+        <div class="instructions">
+            <h4>🚀 How to Use:</h4>
+            <p><strong>Option 1: Open directly in browser</strong></p>
+            <p>Simply open <code>public/index.html</code> in your web browser.</p>
+            
+            <p><strong>Option 2: Use with Node.js server</strong></p>
+            <p>If you have Node.js installed:</p>
+            <pre>node server.js</pre>
+            <p>Then open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></p>
+            
+            <p><strong>Option 3: Use any web server</strong></p>
+            <p>You can use Python, PHP, or any other web server to serve the <code>public</code> folder.</p>
+        </div>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="public/index.html" class="btn">Open Calculator Now</a>
+            <a href="README.md" class="btn">View Documentation</a>
+        </div>
+        
+        <div class="note">
+            <h4>🔧 Features Included:</h4>
+            <ul>
+                <li>Gear ratio calculations for any chainring/cassette combination</li>
+                <li>Gear inches and gain ratio calculations</li>
+                <li>Speed calculator at different cadences</li>
+                <li>Interactive gear inches chart using Chart.js</li>
+                <li>Preset configurations for road, gravel, mountain, fixie, and city bikes</li>
+                <li>Fixie presets: Standard (46×16), Fast (48×17), Easy (44×18)</li>
+                <li>City bike presets: 26" (44×16), 700c (46×18), Comfort (38×18)</li>
+                <li>Responsive design for mobile and desktop</li>
+                <li>Clean, modern UI with Font Awesome icons</li>
+            </ul>
+        </div>
+        
+        <footer style="text-align: center; margin-top: 30px; color: #7f8c8d; font-size: 0.9em;">
+            <p>Bike Gearing Calculator • Made for cyclists • Open the <code>public/index.html</code> file to start using the calculator!</p>
+        </footer>
+    </div>
+</body>
+</html>

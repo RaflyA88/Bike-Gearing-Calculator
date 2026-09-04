@@ -1,0 +1,50 @@
+BIKE GEARING CALCULATOR
+========================
+
+📏 THE 30-SECOND PITCH:
+
+A free desktop and web tool that instantly calculates bicycle gear ratios, speeds, 
+and cadence. Input your bike's gearing (or choose from 11 presets for Road, Gravel, 
+MTB, Fixie, and City bikes), and get complete gear analysis with visual charts. 
+Perfect for choosing optimal gearing before buying a bike, comparing setups, or 
+helping bike shop customers make informed decisions.
+
+🎯 ONE-LINER:
+
+"Find your perfect bicycle gear ratio in seconds with instant calculations, 
+visual charts, and 11 preset configurations for any bike type."
+
+💬 CONVERSATIONAL PITCH:
+
+Ever wondered if your bike has enough low gears for that hill climb? Or which 
+fixie ratio is right for your city? The Bike Gearing Calculator answers these 
+questions instantly. Just enter your chainrings and cassette (or pick a preset), 
+and see your complete gear range with speeds, ratios, and an easy-to-read chart. 
+It's free, works offline, and helps you make smart gearing decisions.
+
+✨ KEY BENEFITS (3 POINTS):
+
+1. Instant Analysis - Get complete gear ratio calculations in seconds
+2. Visual Understanding - See your entire gear range on interactive charts  
+3. Smart Decisions - Compare setups before buying, know if gearing suits your terrain
+
+🎁 VALUE PROPOSITION:
+
+Stop guessing about bicycle gearing. Get accurate, instant analysis of any bike 
+setup with a tool that's free, works offline, and trusted by cyclists worldwide.
+
+📊 USE CASES (QUICK):
+
+• Bike shoppers: "Will this climb my local hills?"
+• Fixie riders: "Which ratio for city riding?"
+• Mechanics: Show customers gear comparisons
+• Bike builders: Choose optimal gearing
+
+🚀 CALL TO ACTION:
+
+Download the free Windows app or use the web version. No installation, no signup, 
+no hassle. Start making better gearing decisions today.
+
+========================
+www.github.com/yourusername/bike-gearing-calculator
+Free • Offline • No Ads
